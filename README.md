@@ -6,7 +6,7 @@ To build a bookmark manager, which is a website to maintain a collection of URLs
 
 One can use it to save a webpage they found useful. One can add tags to the webpages they saved to find them later. Also be able to browse links other users have added.
 
-```sh
+
 **Key Concepts Used**
 * Object-relational mappers
 * Relationships between data within a database
