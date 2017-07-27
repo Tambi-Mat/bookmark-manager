@@ -1,3 +1,4 @@
+
 feature 'Adding tags' do
 
   scenario 'I can add a single tag to a new link' do
@@ -7,8 +8,7 @@ feature 'Adding tags' do
     fill_in 'tags',   with: 'music'
 
     click_button 'Create link'
-    link = Link.new
-    #link = Link.first
+    link = Link.first
     expect(link.tags.map(&:name)).to include('music')
   end
 end
