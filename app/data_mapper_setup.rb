@@ -1,3 +1,4 @@
+require 'sinatra/flash'
 require 'data_mapper'
 require 'dm-postgres-adapter'
 require 'bcrypt'

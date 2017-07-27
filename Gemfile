@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.4.0'
 
+gem 'sinatra-flash'
 gem 'bcrypt'
 gem 'database_cleaner'
 gem 'data_mapper'
