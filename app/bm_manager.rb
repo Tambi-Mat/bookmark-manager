@@ -16,10 +16,9 @@ class BookmarkManager < Sinatra::Base
 
   post '/links' do
     link = Link.create(url: params[:url], title: params[:title])
-                  params[:tags].split.each do |tag|
-                    link.tags << Tag.first_or_create(name: tag)
-                  end
-    # 3. Adding the tag top the link's DataMapper collection
+      params[:tags].split.each do |tag|
+      link.tags << Tag.first_or_create(name: tag)
+      end
     link.save      # 4. Saving link
     redirect to('/links')
   end
